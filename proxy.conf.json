@@ -1,0 +1,6 @@
+{
+  "/api": {
+    "target": "https://beta.payme.uz",
+    "secure": false
+  }
+}

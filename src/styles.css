@@ -1,1 +1,206 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* font-family: "ClearSansRegular"; */
+@font-face {
+    font-family: "ClearSansRegular";
+    src: url("../src/assets/fonts/ClearSansRegular/ClearSansRegular.eot");
+    src: url("../src/assets/fonts/ClearSansRegular/ClearSansRegular.eot?#iefix")format("embedded-opentype"),
+    url("../src/assets/fonts/ClearSansRegular/ClearSansRegular.woff") format("woff"),
+    url("../src/assets/fonts/ClearSansRegular/ClearSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "ClearSansMedium"; */
+@font-face {
+    font-family: "ClearSansMedium";
+    src: url("../src/assets/fonts/ClearSansMedium/ClearSansMedium.eot");
+    src: url("../src/assets/fonts/ClearSansMedium/ClearSansMedium.eot?#iefix")format("embedded-opentype"),
+    url("../src/assets/fonts/ClearSansMedium/ClearSansMedium.woff") format("woff"),
+    url("../src/assets/fonts/ClearSansMedium/ClearSansMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* **********Fonts and general styles START********** */
+h1{
+    font-family: 'Clear Sans';
+    font-size: 36px;
+    color: #fff;
+}
+h4{
+    font-family: 'Clear Sans';
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+}
+p{
+    font-family: 'Clear Sans';
+    font-size: 18px;
+    color: #fff;
+}
+a{
+    font-family: 'Clear Sans';
+    font-size: 20px;
+    color: #fff;
+}
+
+body{
+    background: url('../src/assets/img/bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+}
+/* **********Fonts and general styles END********** */
+
+/* **********MAIN PAGE START********** */
+div.logo{
+    margin-top:75px;
+    z-index: 10000;
+    opacity: 1;
+    position: relative;
+}
+
+h1.heading-better {
+    margin-top: 55px;
+}
+
+.btns{
+    margin-top: 40px;
+}
+    .btns img, .btns a{
+        display: inline-block;
+    }
+    .btns img{
+        vertical-align: inherit;
+    }
+
+
+.icon {
+    width:119px;
+    height: 119px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display:block;
+    margin-left: 50px;
+    
+}
+
+a.icon{
+    outline:none !important;
+}
+
+@media (max-width: 767px) {
+    .icon{
+        margin-left: 20px;
+    }
+}
+@media (max-width: 600px) {
+    .icon{
+        margin-left: 10px;
+    }
+}
+@media (max-width: 580px) {
+    .icon{
+        margin-left: 15px;
+        
+    }
+    .btns img{
+        display: block;
+        margin: 20px auto;
+    }
+}
+
+.enter_prog{
+    margin-top: 40px;
+}
+
+
+.btn_beta_test{
+    margin-top: 40px;
+}
+
+
+p.last{
+    min-height: 53px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #e5dd59;
+    display: inline-block;
+    padding: 15px;
+    margin-top: 40px;
+    color:#000;
+}
+
+/* **********MAIN PAGE END********** */
+
+
+/* **********MODAL DIALOGS START********** */
+
+.modal {
+    top: 125px;
+}
+.modal-content{
+    -webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+}
+
+.modal-header, .modal-footer{
+    border: none;
+    text-align: center;
+}
+
+.modal-body p{
+    color: #000;
+    font-size:16px;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.circle {
+    width: 24px;
+	height: 24px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	background-color: #48b7ac;
+    font-family: 'Clear Sans';
+    font-size:16px;
+}
+
+.form-control-label{
+    font-family: 'Clear Sans';
+    font-weight: bold;
+}
+
+.r-pad{
+    padding-right: 3px;
+}
+
+div.scrollable {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.scrollable::-webkit-scrollbar {
+    width: 4px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	background-color: #bababa;
+    
+}
+.scrollable::-webkit-scrollbar-thumb {
+    width: 4px;
+	-webkit-border-radius: 2px/3px;
+	-moz-border-radius: 2px/3px;
+	border-radius: 2px/3px;
+	background-color: #787878;
+}
+
+    

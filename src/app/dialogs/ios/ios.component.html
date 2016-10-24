@@ -1,0 +1,75 @@
+<div class="modal-header">
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <h4 class="modal-title text-xs-center uppercase">Стать бета-тестером ANDROID</h4>
+</div>
+<div class="modal-body">
+  <div class="row r-pad">
+    <div class="col-xs-12 scrollable">
+      <div class="row">
+        <div class="col-xs-2 col-sm-1 text-xs-center">
+          <span class="tag circle tag-primary">1</span>
+        </div>
+        <div class="col-xs-10 col-sm-11">
+          <p class="text-justify">Вступая в программу бета-тестирования, вы получите уникальный шанс принять участие в разработке приложения и помочь нам сделать приложение лучше для всех.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-2 col-sm-1 text-xs-center">
+          <span class="tag circle tag-primary">2</span>
+        </div>
+        <div class="col-xs-10 col-sm-11">
+          <p class="text-justify">Вступая в программу бета-тестирования, вы получите уникальный шанс принять участие в разработке приложения и помочь нам сделать приложение лучше для всех.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-2 col-sm-1 text-xs-center">
+          <span class="tag circle tag-primary">3</span>
+        </div>
+        <div class="col-xs-10 col-sm-11">
+          <p class="text-justify">Вступая в программу бета-тестирования, вы получите уникальный шанс принять участие в разработке приложения и помочь нам сделать приложение лучше для всех.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-2 col-sm-1 text-xs-center">
+          <span class="tag circle tag-primary">4</span>
+        </div>
+        <div class="col-xs-10 col-sm-11">
+          <p class="text-justify">Вступая в программу бета-тестирования, вы получите уникальный шанс принять участие в разработке приложения и помочь нам сделать приложение лучше для всех.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-xs-12 submit_form">
+        <form  #subForm="ngForm" (ngSubmit)="subscribeUser(name, surname, email)" role="form">
+          <div class="form-group col-xs-9 offset-xs-2 col-sm-5 offset-sm-1 ">
+            <label for="recipient-name" class="form-control-label">Имя</label>
+            <input type="text" class="form-control" id="name" #name>
+          </div>
+          <div class="form-group col-xs-9 offset-xs-2 offset-sm-0 col-sm-5 ">
+            <label for="recipient-name" class="form-control-label">Фамилия</label>
+            <input  type="text" class="form-control" id="surname" #surname>
+          </div>
+          <div class="form-group col-xs-9 offset-xs-2 col-sm-10 offset-sm-1">
+            <label for="message-text" class="form-control-label">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" #email required>
+           
+            <div *ngIf="subscribedUser" class="alert alert-success alert-dismissible fade in" role="alert">
+              <button (click)="closeBtn()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <strong>Данные успешно отправлены на сервер</strong> 
+            </div>
+          </div>
+          <div class="form-group col-xs-9 offset-xs-2 col-sm-10 offset-sm-1 text-xs-center">
+            <button type="submit" class="sub-form-btn uppercase">Стать бета тестером</button>
+            
+           
+          </div>
+       </form>
+      </div>
+    </div>
+  </div>
+</div>
+

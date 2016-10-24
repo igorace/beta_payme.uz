@@ -1,0 +1,38 @@
+.ios {
+     background-image: url('../assets/img/apple.png');
+     
+}
+.ios:hover {
+     background-image: url('../assets/img/apple_hover.png');
+}
+
+.submit_form{
+    margin-top:30px;
+}
+   .submit_form input[type="text"], .submit_form input[type="email"] {
+       -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        background-color: rgba(0,0,0,.1);
+        border: solid 1px rgba(6,6,6,.18);
+   }     
+
+.sub-form-btn{
+    background-color: transparent;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    color: black;
+    outline: none !important;
+    cursor: pointer;
+    font-family: 'Clear Sans';
+    font-size:20px;
+    font-weight: bold;    
+}
+
+.alert-success{
+    margin-top: 10px;
+}

@@ -1,0 +1,15 @@
+
+.android {
+     background-image: url('../assets/img/android.png');
+     
+}
+.android:hover {
+     background-image: url('../assets/img/android_hover.png');
+}
+
+.modal-footer a{
+    text-decoration: none;
+}
+
+
+
